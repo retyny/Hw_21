@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
+    <meta charset="UTF-8">
+    <title>Hw_21</title>
+</head>
+<body>
+
+<div class="main">
+    <div class="left">
+        <h1> New Item</h1>
+
+        <input type="text" maxlength="16" class="place_"  id="id_1" placeholder="id"> <br>
+        <input type="text" maxlength="16" class="place_" id="title" placeholder="title"> <br>
+        <input type="text" maxlength="16" class="place_" id="manufacture" placeholder="manufacture"> <br>
+        <input type="text" maxlength="16" class="place_" id="price" placeholder="price">
+        <select id="categories" class="place_">
+            <option>--</option>
+            <option>Alcohol</option>
+            <option>Milk</option>
+            <option>Chocolate</option>
+            <option>Vegetables</option>
+            <option>Fruits</option>
+        </select> <br>
+        <button id="save_items" class="btn" onclick="saveItem()">Save</button>
+        <button id="get_all" class="btn" onclick="getAll()">return array with all products</button>
+        <select id="categories_2" class="place_">
+            <option>--</option>
+            <option>Alcohol</option>
+            <option>Milk</option>
+            <option>Chocolate</option>
+            <option>Vegetables</option>
+            <option>Fruits</option>
+        </select> <br>
+        <button id="get_type" class="btn" onclick="getByType()"> return array with products of type only  </button>
+    </div>
+    <div class="right">
+        <div class="right_ul" id="right_ul">
+            <h1 class="right_history">Items History:</h1>
+        </div>
+    </div>
+</div>
+    <script src="script/script.js"></script>
+</body>
+</html>
